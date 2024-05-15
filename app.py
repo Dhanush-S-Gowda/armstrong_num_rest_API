@@ -6,7 +6,7 @@ app = Flask(__name__)
 def greet():
     return "welcome to armstrong number api"
 
-@app.route('/armstrong/<int:n>')
+@app.route('/<int:n>')
 def armstorng_num(n):
     sum = 0
     order = len(str(n))
